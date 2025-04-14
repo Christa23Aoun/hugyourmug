@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Your Mug</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- External stylesheet for styling -->
+     <link rel="stylesheet" href="hugyourmug.css">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+<body>
+<header class="header"><!-- Header section of the webpage -->
+    <a href="#" class="logo"><!-- Logo taba3 l coffe  shop ma3 link 3al  home page -->
+        <img  class="logo1"src= "images/logo.jfif" alt="logo" title="sitelogo">
+    </a>
+    <nav class="navbar"> <!-- Navigation menu  lamma nkbous  3a wehde btekhdna 3al page li ela-->
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a><!--I add it ta bi3 mugs--->
+        <a href="#contact">contact</a>
+       
+    </nav>
+    <div class="icons">   <!-- Icons lal search, shopping cart, and menu  t3allamta  jdid -->
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    
+    <div class="search-form" id="searchForm">   <!--Search form ma3 input box and search icon bas model ma btmshe -->
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search "></label>
+    </div> 
+</div>
+
+    <div class="cart-items-container">  <!-- Container for shopping cart items: li mnaamelloun add to cart bi bayno hon -->
+        <div class="cart-item">  <!-- cart  la  kel item  fi l  images, content,  wl prices -->
+            <span class="fas fa-times"></span>      <!-- x icon to remove the item from the cart -->
+            <img src="images/caramel-latte.webp" alt="caramel latte"><!--haw by default bi bayno mannoun bl menu aslan -->
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class ="price">$4.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/Caramel_macchiato.webp" alt="Caramel_macchiato">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class ="price">$4.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/dbl-chocolate-Iced-Mocha.webp" alt="dbl-chocolate-Iced-Mocha">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class ="price">$4.99/-</div>
+            </div>
+        </div>
+        <a href="#menu" class="btn">Checkout now</a>
+    </div>
+</header>
+<section class="home" id="home"><!--Main page -->
+<div class="slider"><!--slider  3melto  bi 5 pictures  w dots  w buttons Next w  Previous  kel 5s bttghayar l soura-->
+    <div class="list">
+        <div class="item">
+            <img src="images/lifeisshort.jfif" alt="Caffè">
+        </div>
+        <div class="item">
+            <img src="images/love.jfif" alt="Caffè">
+        </div>
+        <div class="item">
+            <img src="images/coffee-back.jpg" alt="Caffè">
+        </div>
+        <div class="item">
+            <img src="images/yumm.jfif" alt="Caffè">
+        </div>
+        <div class="item">
+            <img src="images/lattee.jpg" alt="Caffè">
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+    <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="content">
+    <a href="#" class="btn">Get yours now</a><!--go to the main page-->
+</div>
+</section>    
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<section class="about" id="about"><!--aboout page  fya l logo taba3 l coffee shop w shwy informations-->
+
+    <h1 class="heading">
+        <span>about</span> us
+    </br>
+</br>
+        <div class="row">
+            <div class="image">
+                <img src="images/Discover.png" alt="">
+            </div>
+            <div class="content">
+                <h3>what makes our coffee special?</h3>
+                <p>
+                    At Hug Your Mug, our coffee is not just a beverage; it's a warm embrace in a cup. What sets our coffee apart is the meticulous selection of premium beans sourced from renowned coffee-growing regions worldwide. We take pride in our commitment to fair and sustainable trade practices, ensuring that every sip supports the hardworking farmers who cultivate these exceptional beans. Our expert roasters carefully craft each batch to perfection, capturing the unique flavor profiles and aromas that make Hug Your Mug coffee an extraordinary experience. With a focus on quality, community, and the joy that a perfect cup can bring, we invite you to savor the warmth and richness that sets Hug Your Mug coffee apart from the rest.
+                 </p>   
+                    <a href="Learn_More.html"  id="learnmore"class="btn">Learn more</a><!--btfta7 page  html tene -->
+            </div>
+        </div>
+    </h1>
+</section>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<section class="menu" id="menu">
+    <h1 class="heading"> our <span>menu</span></h1>
+    <div class="box-container"><!--menu page  fya  l box  container  li  fi kel l items kl wahad  bi box-->
+        <div class="box">
+            <img src="images/Espresso.png" alt="espresso">
+            <h3>Espresso</h3>
+            <div class="price">1.5$ <span>2$</span></div><!--la kel item fi  soura w h3(name  li ra7 ybayin)  w price w price abel l offre-->
+            <button onclick="addToCart({ name: 'Espresso', price: '1.5$', image: 'images/Espresso.png' })" class="btn">add to cart</button><!--kermel lamma nkbous  3a add to cart ysir l item bl cart-->
+        </div>
+        <div class="box">
+            <img src="images/Cappuccino.png" alt="nescafe"> 
+            <h3>Nescafe</h3>
+            <div class="price">3$ <span>3.5$</span></div>
+            <button onclick="addToCart({ name: 'Nescafe', price: '3$', image: 'images/Cappuccino.png' })" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/hott.png" alt="hot chocolate"> 
+            <h3>Hot Chocolate</h3>
+            <div class="price">3$ <span>3.5$</span></div>
+            <button onclick="addToCart({ name: 'Hot Chocolate', price: '3$', image: 'images/hott.png' })" class="btn">add to cart</button>
+         </div>
+        <div class="box">
+            <img src="images/capp.png" alt="Cappuccino"> 
+            <h3>Cappuccino</h3>
+            <div class="price">3.5$ <span>4$</span></div>
+            <button onclick="addToCart({ name: 'Cappuccino', price: '3.5$', image: 'images/capp.png' })" class="btn">add to cart</button>
+         </div>
+        
+         <div class="box">
+            <img src="images/marsh.png" alt="marshmello"> 
+            <h3>Marshmellow Chocolate</h3>
+            <div class="price">3$ <span>3.5$</span></div>
+            <button onclick="addToCart({ name: 'Marshmellow Chocolate', price: '3$', image: 'images/marsh.png' })" class="btn">add to cart</button>
+         </div>
+         
+         <div class="box">
+            <img src="images/Flat White.png" alt="Flat White"> 
+            <h3>Flat White</h3>
+            <div class="price">4$ <span>4.99$</span></div>
+            <button onclick="addToCart({ name: 'Flat White', price: '4$', image: 'images/Flat White.png' })" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Caffè Latte.png" alt="Caffè Latte"> 
+            <h3>Caffè Latte</h3>
+            <div class="price">4$ <span>4.99$</span></div>
+            <button onclick="addToCart({ name: 'Caffè Latte', price: '4$', image: 'images/Caffè Latte.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Chestnut Praline Latte.png" alt="Chestnut Praline Latte"> 
+            <h3>Chestnut Praline Latte</h3>
+            <div class="price">4$ <span>4.99$</span></div>
+            <button onclick="addToCart({ name: 'Chestnut Praline Latte', price: '4$', image: 'images/Chestnut Praline Latte.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Caramel Brulée Latte.png" alt="Caramel Brulée Latte"> 
+            <h3>Caramel Brulée Latte</h3>
+            <div class="price">4$ <span>4.99$</span></div>
+            <button onclick="addToCart({ name: 'Caramel Brulée Latte', price: '4$', image: 'images/Caramel Brulée Latte.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Apple Crisp Oatmilk Macchiato.png" alt="Apple Crisp Oatmilk Macchiato"> 
+            <h3>Apple Crisp Oatmilk Macchiato</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Apple Crisp Oatmilk Macchiato', price: '5$', image: 'images/Apple Crisp Oatmilk Macchiato.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Caramel Macchiato.png" alt="Caramel Macchiato"> 
+            <h3>Caramel Macchiato</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Caramel Macchiato', price: '5$', image: 'images/Caramel Macchiato.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Espresso Macchiato.png" alt="Espresso Macchiato"> 
+            <h3>Espresso Macchiato</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Espresso Macchiato', price: '5$', image: 'images/Espresso Macchiato.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Peppermint Mocha.png" alt="Peppermint Mocha"> 
+            <h3>Peppermint Mocha</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Peppermint Mocha', price: '5$', image: 'images/Peppermint Mocha.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Peppermint White Chocolate Mocha.png" alt="Peppermint White Chocolate Mocha"> 
+            <h3>Peppermint White Chocolate Mocha</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Peppermint White Chocolate Mocha', price: '5$', image: 'images/Peppermint White Chocolate Mocha.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/Caffè Mocha.png" alt="Caffè Mocha"> 
+            <h3>Caffè Mocha</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'Caffè Mocha', price: '5$', image: 'images/Caffè Mocha.png'})" class="btn">add to cart</button>
+         </div>
+         <div class="box">
+            <img src="images/White Chocolate Mocha.png" alt="White Chocolate Mocha"> 
+            <h3>White Chocolate Mocha</h3>
+            <div class="price">5$ <span>5.99$</span></div>
+            <button onclick="addToCart({ name: 'White Chocolate Mocha', price: '5$', image: 'images/White Chocolate Mocha.png'})" class="btn">add to cart</button>
+         </div>
+         <!--images  are  from starbucks site with removing background  for  every image -->
+
+    </div>
+</section>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<section class="products" id="products"><!--products  page  ta bi3  mugs  kamen -->
+    <h1 class="heading"> our <span>products</span></h1>
+    <div class="box-container"><!--box  container  fi kl l items  kl  wahad  bi alb box -->
+        <div class="box"><!--kl box  fi icons w soura w  esm l item(h3)  w rate stars  w price w offre  -->
+            <div class="icons"><!--l icons  t3alamet kif  mnjiboun  -->
+                <a class="fas fa-shopping-cart" onclick="addToCart({ name: 'Transparent Mug', price: '1.5$', image: 'images/transparent.png'})"></a><!--onclick btzid 3al cart-->
+                <a class="fas fa-heart"></a> 
+                <a href="#"class="fas fa-eye"></a><!--onclick  btrja 3al home -->
+            </div>
+            
+            <div class="image">
+                <img src="images/transparent.png" alt="transparent">
+            </div>
+            <div class="content">
+                <h3>Transparent Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.5$  <span>2.5$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Black Mug', price: '1.25$', image: 'images/blackmug.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#" class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/blackmug.png" alt="tBlack Mug">
+            </div>
+            <div class="content">
+                <h3>Black Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.25$  <span>2$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Matte Mug', price: '1.25$', image: 'images/colorss.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#"class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/colorss.png" alt="Colored Matte Mug">
+            </div>
+            <div class="content">
+                <h3>Matte Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.25$  <span>2$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Colored Mug', price: '1.25$', image: 'images/colorettt.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#" class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/colorettt.png" alt="Colored  Mug">
+            </div>
+            <div class="content">
+                <h3>Colored Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.25$  <span>2$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Mug with spoon', price: '1.25$', image: 'images/mal23a-removebg-preview.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#" class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/mal23a-removebg-preview.png" alt="Mug with spoon">
+            </div>
+            <div class="content">
+                <h3>Mug with spoon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.25$  <span>2$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Colored Mug with spoon', price: '1.25$', image: 'images/male3i2-removebg.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#"class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/male3i2-removebg.png" alt=" Colored Mug with spoon">
+            </div>
+            <div class="content">
+                <h3> Colored Mug with spoon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1.25$  <span>2$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a  class="fas fa-shopping-cart" onclick="addToCart({ name: 'Self Stirring Mug', price: '6.99$', image: 'images/selfstirring.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a  href="#" class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/selfstirring.png" alt="Self Stirring Mug">
+            </div>
+            <div class="content">
+                <h3>Self Stirring Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">6.99$  <span>10$</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a class="fas fa-shopping-cart" onclick="addToCart({ name: 'Thermos Mug', price: '5.99$', image: 'images/thermosrem.png'})"></a>
+                <a class ="fas fa-heart"></a>
+                <a href="#" class ="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/thermosrem.png" alt="Thermos">
+            </div>
+            <div class="content">
+                <h3>Thermos Mug</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">5.99$  <span>9$</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<section class="contact" id="contact"><!---contact  page  fya   location w input ta  l user ytkout informations  elo ta ytwasal ma3na -->
+    <h1 class="heading"><span>contact</span> us</h1>
+</br>
+</br>
+
+    <div class="row"><!--location  bayte  bl bekaa-->
+        <iframe  class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1649.1107323889016!2d36.38199486185042!3d34.242892134016785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15226f22ef77c207%3A0xdf19f2b27b47bd3c!2sMr.%203ajin%26seif%20market!5e0!3m2!1sen!2slb!4v1701632607977!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <form action="">
+            <h3>Get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span><!--icon user-->
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span><!--icon envelope-->
+                <input type="email" name="" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span><!--icon phone-->
+                <input type="number" name="" placeholder="Number">
+            </div>
+            <input type="submit" value="Contact now" class="btn">
+         </form>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</section>
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a><!--icones hlwin  bas ma bymsho -->
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+    <div class="links"><!--links bi redouna  3al pages-->
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+
+    </div>
+    <div class="credit">created  by  <span>Christa-Maria Aoun</span>  All rights reserved</div>
+</br>
+</section>
+
+<script src="HUGyourMUG.js"></script>
+</body>
+</html>
